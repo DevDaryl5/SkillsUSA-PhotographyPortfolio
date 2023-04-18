@@ -1,0 +1,28 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav-main {
+    display: flex;
+    background-color: maroon;
+    color: white;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    position: sticky 0px;
+    
+}
+
+.nav-right {
+    display: flex;
+    gap: 20px;
+}
+
+footer {
+    display: flex;
+    gap: 30px;
+    align-items: bottom;
+}
