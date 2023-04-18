@@ -1,28 +1,291 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+* {
     padding: 0px;
     margin: 0px;
+    font-family: "Roboto", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .nav-main {
+    box-sizing: border-box;
+    
     display: flex;
-    background-color: maroon;
+    background-color: black;
     color: white;
-    height: 100px;
+    height: 60px;
     justify-content: space-between;
     align-items: center;
     padding-left: 25px;
     padding-right: 25px;
-    position: sticky 0px;
-    
+    position: fixed ;
+    top: 0px;
+    width: 100%;
+    background: linear-gradient(180deg, #0F0F0F 0%, rgba(8, 8, 8, 0) 63.77%);
 }
 
 .nav-right {
     display: flex;
     gap: 20px;
+    font-size: 20px;
+}
+
+.nav-right a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-right a:hover {
+    transform:scale(1.1);
+
+}
+
+.nav-left {
+    font-size: 30px;
+    font-weight: 700;
 }
 
 footer {
+    box-sizing: border-box;
     display: flex;
     gap: 30px;
-    align-items: bottom;
+    bottom: 0px;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(8, 8, 8, 0) 0%, #0F0F0F 63.77%);
+    color: white;
+    justify-content: right;
+    padding-right: 30px;
 }
+
+footer ion-icon {
+    fill: white;
+    width: 30px;
+    height: 30px;
+}
+
+.pages {
+    height: 100vh;
+    background: black;
+    background-size: cover;
+}
+
+
+
+/* About */
+
+#about {
+    background-image: url("./Assets/pexels-ezra-comeau-2387418.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-content {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    color: white;
+    font-weight: 500;
+    font-size: 23px;
+    gap: 30px;
+    padding: 50px;
+    border-radius: 3px;
+    border: 3px solid white;
+    margin: 30px;
+    /* background: rgba(222, 222, 222, 0.32); */
+}
+
+.about-content p {
+    text-indent: 50px;
+    text-align: justify;
+    
+}
+
+.about-content img {
+    height: 500px;
+    border-radius: 10px;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 50%;
+}
+
+.about-text h1 {
+    font-size: 50px;
+    width: fit-content;
+}
+
+/* Portfolio */
+
+#portfolio {
+    /* background-image: url("./Assets/pexels-eberhard-grossgasteiger-1287145.jpg"); */
+    background-color: black;
+    height: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+    font-size: 30px;
+    color: white;
+
+    padding: 50px;
+}
+
+#portfolio h1 {
+    padding-bottom: 50px;
+}
+
+.portfolio-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio-card {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    justify-content: flex-end;
+   
+
+    width: 400px;
+    height: 500px;
+    border-radius: 7px;
+
+    padding: 20px;
+}
+
+#card1 {
+    background-image: url(./Assets/pexels-simon-berger-1266810.jpg);
+    background-size: cover;
+}
+
+#card2 {
+    background-image: url(./Assets/pexels-alex-azabache-3214995.jpg);
+    background-size: cover;
+}
+
+#card3 {
+    background-image: url(./Assets/pexels-cihan-oğuzmetin-4505269.jpg);
+    background-size: cover;
+}
+
+#card4 {
+    background-image: url(./Assets/pexels-creation-hill-1681010.jpg);
+    background-size: cover;
+}
+
+#card5 {
+    background-image: url(./Assets/pexels-denis-perekhrest-3234167.jpg);
+    background-size: cover;
+}
+
+#card6 {
+    background-image: url(./Assets/pexels-eberhard-grossgasteiger-1670187.jpg);
+    background-size: cover;
+}
+
+#card7 {
+    background-image: url(./Assets/pexels-eberhard-grossgasteiger-1624438.jpg);
+    background-size: cover;
+}
+
+#card8 {
+    background-image: url(./Assets/pexels-francesco-ungaro-4322027.jpg);
+    background-size: cover;
+}
+
+/* Contact */
+
+#contact {
+    background-image: url("./Assets/pexels-spencer-selover-775417.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-content {
+    /* box-sizing: border-box; */
+    /* background: rgba(222, 222, 222, 0.32); */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+
+    color: white;
+    font-weight: 500;
+    font-size: 23px;
+
+    width: 100%;
+    margin: 30px;
+
+    border-radius: 3px;
+    border: 3px solid white;
+    padding: 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    padding: 3%;
+    background-color: grey;
+    border-radius: 7px;
+
+}
+
+.contact-form > h1 {
+    font-size: 20px;
+}
+
+.contact-form input {
+    width: 350px;
+    
+}
+
+.contact-message {
+    height: 300px;
+}
+
+.contact-content > h1 {
+
+    font-size: 60px;
+}
+
+.contact-form  button {
+
+    cursor: pointer;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(3px);
+    transform: translateY(-25%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(0%);
+    transition: all 1s;
+}
+

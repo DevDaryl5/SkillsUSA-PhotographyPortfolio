@@ -1,37 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
+
 <body>
     <header>
         <nav>
             <div class="nav-main">
                 <div class="nav-left">
-                    <p>Photographer name</p>
+                    <p>John Smith</p>
                 </div>
                 <div class="nav-right">
-                    <p>About</p>
-                    <p>Portfolio</p>
-                    <p>Contact</p>
+                    <a href="#about">About</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contact">Contact</a>
                 </div>
             </div>
-            
+
         </nav>
     </header>
-    <section>
-        <p>About</p>
+    <section class="pages" id="about">
+        <div class="about-content">
+            <div class="about-text hidden">
+                <h1>Biography</h1>
+                <p> I'm John Smith, a New York City-based photographer
+                    who specializes in capturing the beauty of the world through
+                    striking images. I play with contrast and experiment with different
+                    techniques to push the boundaries of photography. My goal is to create images
+                    that tell a story, capture a moment, or evoke a feeling. Check out my
+                    portfolio online to see my work</p>
+            </div>
+            <img src="./Assets/pexels-mathias-reding-14959637.jpg" alt="John smith biography picture" class="hidden">
+        </div>
     </section>
-    <section>
-        <p>contact</p>
+    <section class="pages" id="portfolio">
+        <h1>Portfolio</h1>
+        <div class="portfolio-content">
+            <div class="portfolio-card hidden" id="card1">
+                <h3>Mountain Sunset</h3>
+                <p></p>
+            </div>
+            <div class="portfolio-card hidden" id="card2">
+                <h3>Tallest Tower</h3>
+                <p></p>
+            </div>
+            <div class="portfolio-card hidden" id="card3">
+                <h3>Girl Portait</h3>
+                <p></p>
+            </div>
+            <div class="portfolio-card hidden" id="card4">
+                <h3>Man Portait</h3>
+                <p></p>
+            </div>
+            <div class="portfolio-card hidden" id="card5">
+                <h3>Cathedral</h3>
+                <p></p>
+            </div>
+            <div class="portfolio-card hidden" id="card6">
+                <h3>Coolio Mountain</h3>
+                <p></p>
+            </div>
+            <div class="portfolio-card hidden" id="card7">
+                <h3>Twinkle Little Star</h3>
+                <p></p>
+            </div>
+            <div class="portfolio-card hidden" id="card8">
+                <h3>Its a Jungle up Here</h3>
+                <p></p>
+            </div>
+        </div>
+    </section>
+    <section class="pages" id="contact">
+
+        <div class="contact-content">
+            <h1 class="hidden">Contact</h1>
+            <div class="contact-form hidden">
+                <h1>Full Name:</h1>
+                <input type="text" placeholder="Name">
+                <h1>Email:</h1>
+                <input type="text" placeholder="examle@gmail.com">
+                <h1>Message:</h1>
+                <input type="text" class="contact-message">
+                <button class="hidden"> Submit </button>
+            </div>
+            
+
+        </div>
+
     </section>
     <footer>
-        <p>Instagram</p>
-        <p>Facebook</p>
+        <ion-icon name="logo-instagram"></ion-icon>
+        <ion-icon name="logo-facebook"></ion-icon>
     </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
