@@ -14,6 +14,7 @@ html {
     
     display: flex;
     background-color: black;
+    z-index: 1;
     color: white;
     height: 60px;
     justify-content: space-between;
@@ -68,7 +69,7 @@ footer ion-icon {
 }
 
 .pages {
-    height: 100vh;
+    height: 100%;
     background: black;
     background-size: cover;
 }
